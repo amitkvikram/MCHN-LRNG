@@ -5,7 +5,7 @@ from numpy import linalg
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from sklearn import linear_model
-import scipy
+from scipy.optimize import fmin_bfgs
 
 class uniVariate_grad:
 
@@ -56,8 +56,6 @@ class uniVariate_grad:
         plt.plot(list(xAxis[:,1:]), list(yAxis));
         plt.show();
     def printTheta(self):
-        J= (1/(2*self.m))*(np.sum(np.square(np.dot(self.X,self.theta)-self.Y)));
-        print(J)
         print("theta=",self.theta)
 
 class uni_skikit:
@@ -69,7 +67,6 @@ class uni_skikit:
         regr= linear_model.LinearRegression();
         regr.fit(self.X, self.Y);
         self.Y_predict= regr.predict(self.X);
-        print(regr.score(self.X, self.Y)*((self.Y - self.Y.mean()) ** 2).sum())
     def plotData(self):
         plt.plot(list(self.X), list(self.Y), 'rx');
         plt.xlabel('xAxis');
@@ -80,16 +77,30 @@ class uni_skikit:
         plt.plot(list(self.X), list(self.Y), 'rx');
         plt.xlabel('xAxis');
         plt.ylabel('yAxis');
-        plt.title("skikit PRediction")
+        plt.title("singleVariable Data")
         plt.plot(self.X, self.Y_predict);
         plt.show();
 
+class uni_bfgs():
 
+    def __init__(self):
+        self.data= np.loadtxt("linearReg_m.txt",delimiter=',');
+        self.X= self.data[:,0:-1];
+        self.Y= self.data[:,1:2];
+        self.m= self.X.shape[0];
+        self.theta= np.zeros((self.X.shape[1]+1,1));
+    def costFunction(self, self.theta):
+        JVal=(1/(2*self.m))*(np.sum(np.square(np.dot(self.X,self.theta)-self.Y)));
+    def cost_grad(self):
+        grad = np.dot(self.X.T, (np.dot(self.X, self.theta) - self.Y));
+    def findOptTheta(self):
+        self.optTheta = fmin_bfgs(costFunction, self.theta, cost_grad);
+        print(self.optTheta)
 
 def uni_grad():
     data_uni = uniVariate_grad();
     data_uni.iterAlpha(0.01);          #give alpha as argument
-    # data_uni.plotData();
+    data_uni.plotData();
     data_uni.addX0();
     data_uni.gradientDescent(1000);    #give number of iteration as argument
     data_uni.plotCost();
@@ -101,8 +112,12 @@ def skikit_linearReg():
     data_uni1.findFit();
     data_uni1.plotData();
     data_uni1.plotCurve();
-uni_grad();
-skikit_linearReg();
+def bfgs_linearReg():
+    data_uni2= uni_bfgs();
+    data_uni2.
+# uni_grad();
+# skikit_linearReg();
+bfgs_linearReg()
 
 
 ###################################################################################################################################
@@ -194,7 +209,7 @@ class multi_skikit():
         self.X= self.data[:,0:-1];
         self.Y= self.data[:,-1:];
     def findFit(self):
-        regr= linear_model.LinearRegression(normalize = True);
+        regr= linear_model.LinearRegression();
         regr.fit(self.X, self.Y);
         return regr;
     def plotCurve(self):
@@ -239,5 +254,5 @@ def skikit_linearReg1():
     data_multi1.regr=data_multi1.findFit();
     # data_uni1.plotData();
     data_multi1.plotCurve();
-multi_grad();
-skikit_linearReg1();
+# multi_grad();
+# skikit_linearReg1();
