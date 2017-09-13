@@ -142,6 +142,7 @@ class multiVariate():
             self.X= (self.X)/self.sigma;
 
         def costCalc(self):
+
             J= (1/(2*self.m))*(np.sum(np.square(np.dot(self.X,self.theta)-self.Y)));
             self.J.append(J);
 
