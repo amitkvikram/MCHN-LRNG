@@ -209,7 +209,8 @@ class multi_skikit():
         yAxis= np.linspace(0,max1, 120);
         yAxis= np.tile(yAxis, 120).reshape(120,120);
         yAxis=yAxis.T
-
+        print(xAxis)
+        print(yAxis)
         Z= np.empty_like(xAxis);
         for i in range(120):
             Z[:,i]= self.regr.predict(np.column_stack((xAxis[:,i],yAxis[:,i]))).reshape(120,);

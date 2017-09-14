@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn import linear_model
 from sklearn.linear_model import RidgeCV
+import matplotlib.cm as cm
+import matplotlib.mlab as mlab
 
 
 class Logistic:
@@ -15,9 +17,10 @@ class Logistic:
         self.X_copy = self.X
         self.X = np.column_stack((np.ones((self.X.shape[0], 1)), self.X))
         self.theta = np.zeros((self.X.shape[1], 1))
-        self.alpha = 0.0011
+        self.alpha = 0.00121
         self.m = self.X.shape[0]
         self.J=[]
+        self.lambda1 = 100   #lambda1 is regularization parameter
 
     def plotData(self):
         X1_1 = self.X[self.Y == 1, 2]
@@ -123,4 +126,92 @@ def callSkikitLogistic():
 # callSkikitLogistic()
 
 
+class Logistic_poly:
+    def __init__(self):
+        self.data = np.loadtxt("logisticReg_poly.txt", delimiter=',')
+        self.X = self.data[:, :-1]
+        self.Y = self.data[:, -1]
+        # self.plot_data()
+        self.X = self.map_feature(6, self.X)
+        # self.featurScaling()
+        self.X = np.column_stack((np.ones((self.X.shape[0], 1)), self.X))
+        self.theta = np.zeros((self.X.shape[1], ))
+        self.alpha = 0.00121
+        self.lambda1 = .5                  #lambda1 is regularization parameter
+        self.m = self.data.shape[0]
+        self.J = []
 
+    def plot_data(self):
+        pos_X = self.X[self.Y==1, 0]
+        pos_Y = self.X[self.Y==1, 1]
+        neg_X = self.X[self.Y==0, 0]
+        neg_Y = self.X[self.Y==0, 1]
+        plt.plot(pos_X, pos_Y, 'bo')
+        plt.plot(neg_X, neg_Y, 'rx')
+        plt.show()
+
+    def map_feature(self, degree, X):
+        for i in range(2, degree + 1):
+            for j in range(0, i+1):
+                X = np.column_stack((X, np.multiply(np.power(X[:, 0], i - j), np.power(X[:, 1], j))))
+        return X;
+
+    def featurScaling(self):
+        max1 = np.amax(self.X, 0)
+        min1 = np.amin(self.X, 0)
+        self.sigma = max1 - min1
+        self.X = self.X / self.sigma
+
+    def hypothesis(self, X):
+        return 1/(1 + np.exp(-np.dot(X, self.theta)))
+
+    def gradient(self):
+        reg = self.lambda1*self.theta
+        reg[0] = 0
+        grad = np.dot(self.X.T, (self.hypothesis(self.X) - self.Y))  + reg
+        return grad
+
+    def gradient_descent(self, iter1):
+        self.iter = iter1
+        for i in range(iter1):
+            self.theta = self.theta - (self.alpha/self.m) * self.gradient()
+            self.cost()
+
+    def cost(self):
+        h = self.hypothesis(self.X)
+        J = (-1 / self.m) * (np.dot(self.Y.T, np.log(h)) + np.dot((1 - self.Y).T, np.log(1 - h)))
+        self.J.append(J)
+
+    def plot_curve(self):
+        plt.figure()
+        # self.X[:,1:] = self.X[:, 1:]*self.sigma
+        pos_X = self.X[self.Y == 1, 1]
+        pos_Y = self.X[self.Y == 1, 2]
+        neg_X = self.X[self.Y == 0, 1]
+        neg_Y = self.X[self.Y == 0, 2]
+        plt.plot(pos_X, pos_Y, 'rx')
+        plt.plot(neg_X, neg_Y, 'bo')
+        xAxis = np.linspace(np.min(self.data[:, 0]), np.max(self.data[:, 0]), 50)
+        yAxis = np.linspace(np.min(self.data[:, 1]), np.max(self.data[:, 1]), 50)
+        xAxis1 = xAxis
+        yAxis1 = yAxis
+        plt.title("decision Boundary_with Regularization")
+        xAxis, yAxis = np.meshgrid(xAxis, xAxis)
+        zAxis = np.zeros((50,50))
+        for i in range(xAxis.shape[1]):
+            temp_x = self.map_feature(6, np.column_stack((xAxis[:, i], yAxis[:, i])))
+            temp_x = np.column_stack((np.ones((xAxis.shape[0], )), temp_x))
+            zAxis[:, i] = np.dot(temp_x, self.theta)
+
+        CS = plt.contour(xAxis1, yAxis1, zAxis, [0.0])
+        # plt.colorbar(CS)
+        plt.clabel(CS, inline=1, fontsize=10)
+        plt.show()
+
+
+def callLogistic_poly():
+    data_logistic = Logistic_poly()
+    data_logistic.gradient_descent(3000000)
+    data_logistic.plot_curve()
+
+callLogistic_poly()
