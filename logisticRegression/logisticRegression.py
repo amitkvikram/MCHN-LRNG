@@ -133,7 +133,7 @@ class Logistic_poly:
         self.Y = self.data[:, -1]
         # self.plot_data()
         self.X = self.map_feature(6, self.X)
-        # self.featurScaling()
+        self.featurScaling()
         self.X = np.column_stack((np.ones((self.X.shape[0], 1)), self.X))
         self.theta = np.zeros((self.X.shape[1], ))
         self.alpha = 0.00121
@@ -176,7 +176,7 @@ class Logistic_poly:
         for i in range(iter1):
             self.theta = self.theta - (self.alpha/self.m) * self.gradient()
             self.cost()
-
+        self.theta[1:,] = self.theta[1:,]/self.sigma
     def cost(self):
         h = self.hypothesis(self.X)
         J = (-1 / self.m) * (np.dot(self.Y.T, np.log(h)) + np.dot((1 - self.Y).T, np.log(1 - h)))
@@ -184,7 +184,7 @@ class Logistic_poly:
 
     def plot_curve(self):
         plt.figure()
-        # self.X[:,1:] = self.X[:, 1:]*self.sigma
+        self.X[:,1:] = self.X[:, 1:]*self.sigma
         pos_X = self.X[self.Y == 1, 1]
         pos_Y = self.X[self.Y == 1, 2]
         neg_X = self.X[self.Y == 0, 1]
