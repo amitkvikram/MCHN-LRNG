@@ -4,7 +4,13 @@
     <bookmark url="file://$PROJECT_DIR$/logisticRegression/logisticRegression.py" line="192" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b88d77ac-09c4-42e1-8205-0780e1920707" name="Default" comment="" />
+    <list default="true" id="b88d77ac-09c4-42e1-8205-0780e1920707" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/algoCode.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
