@@ -12,10 +12,10 @@ class DigitRecognizer:
         self.X = data[:,1:]
         self.Y = data[:,0].reshape(self.X.shape[0], )
         self.theta = np.zeros((self.X.shape[1]+1,10))
-        self.regr = linear_model.LogisticRegression(solver='newton-cg',max_iter=200)
+        self.regr = linear_model.LogisticRegression(solver='lbfgs',max_iter=400, C=100)
 
     def find_parameter(self):
-        for i in range (0,10):
+        for i in range(0, 1):
             print(i)
             temp = (self.Y == i).astype(np.float64)
             self.regr.fit(self.X, temp)
@@ -25,7 +25,7 @@ class DigitRecognizer:
             self.score = self.regr.score(self.X, temp)
             print(self.score)
         print(self.theta.shape)
-        np.savetxt("parameter.txt",self.theta,delimiter=',',newline='\n')
+        # np.savetxt("parameter.txt",self.theta,delimiter=',',newline='\n')
 
     def hypothesis(self, theta):
         # print(self.temp1)
