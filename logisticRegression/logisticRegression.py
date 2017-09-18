@@ -209,34 +209,35 @@ class LogisticPoly:
         plt.show()
 
 class SkikitPoly():
-    def __init__(self):
-        self.data = np.loadtxt("logisticReg_poly.txt", delimiter=',')
+    def __init__(self,fname):
+        self.data = np.loadtxt(fname, delimiter=',')
         self.X = self.data[:, :-1]
         self.Y = self.data[:, -1]
 
     def findFit(self):
-        self.regr = linear_model.LogisticRegression(solver='lbfgs')
+        self.regr = linear_model.LogisticRegression(solver='newton-cg')
         self.regr.fit(self.X, self.Y)
         self.theta = self.regr.coef_
         intercept = self.regr.intercept_
         self.theta = np.column_stack((intercept, self.theta))
         self.theta.shape = (self.theta.shape[1], )
+        print(self.theta.shape)
         self.score = self.regr.score(self.X, self.Y)
         print(self.score)
 
     def map_feature(self, deg):
-        self.poly = PolynomialFeatures(deg)
+        self.poly = PolynomialFeatures(deg, include_bias=False)
         self.X = self.poly.fit_transform(self.X)
 
     def plot_curve(self):
-        pos_X = self.X[self.Y == 1, 1]
-        pos_Y = self.X[self.Y == 1, 2]
-        neg_X = self.X[self.Y == 0, 1]
-        neg_Y = self.X[self.Y == 0, 2]
+        pos_X = self.X[self.Y == 1, 0]
+        pos_Y = self.X[self.Y == 1, 1]
+        neg_X = self.X[self.Y == 0, 0]
+        neg_Y = self.X[self.Y == 0, 1]
         plt.plot(pos_X, pos_Y, 'rx')
         plt.plot(neg_X, neg_Y, 'bo')
         xAxis = np.linspace(np.min(self.data[:, 0]), np.max(self.data[:, 0]), 50)
-        yAxis = np.linspace(np.min(self.data[:, 1]), np.max(self.data[:, 1]), 50)
+        # yAxis = np.linspace(np.min(self.data[:, 1]), np.max(self.data[:, 1]), 50)
         plt.title("Decision Boundary@sklearn")
         xAxis, yAxis = np.meshgrid(xAxis, xAxis)
         zAxis = np.zeros((50, 50))
@@ -255,10 +256,10 @@ def callLogistic_poly():
     data_logistic.plot_curve()
 
 def callskikit_poly():
-    data_logistic = SkikitPoly()
+    data_logistic = SkikitPoly("logisticReg_poly.txt")
     data_logistic.map_feature(6)
     data_logistic.findFit()
-    # data_logistic.plot_curve()
+    data_logistic.plot_curve()
 
 # callLogistic_poly()
-callskikit_poly()
+# callskikit_poly()
