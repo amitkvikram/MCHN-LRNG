@@ -9,55 +9,35 @@ class DigitRecognizer:
         raw_data = open(fname, 'rt')
         # print(next(raw_data))
         data = np.loadtxt(raw_data, delimiter=",", skiprows=1)
-        self.X = data[:,1:]
-        self.Y = data[:,0].reshape(self.X.shape[0], )
+        self.X = data[:21000,1:]
+        self.X_test = data[21000:,1:]
+        self.Y = data[:21000,0].reshape(self.X.shape[0], )
+        self.Y_test = data[21000:,0]
         self.theta = np.zeros((self.X.shape[1]+1,10))
-        self.regr = linear_model.LogisticRegression(solver='lbfgs',max_iter=400, C=100)
+        self.regr = linear_model.LogisticRegression(solver='lbfgs')
 
     def find_parameter(self):
-        for i in range(0, 1):
+        for i in range(0, 10):
             print(i)
             temp = (self.Y == i).astype(np.float64)
+            temp_test = (self.Y_test == i).astype(np.float64)
             self.regr.fit(self.X, temp)
             self.theta1 = self.regr.coef_
             intercept = self.regr.intercept_
             self.theta[:,i] = np.column_stack((intercept, self.theta1))
-            self.score = self.regr.score(self.X, temp)
+            self.score = self.regr.score(self.X_test, temp_test)
             print(self.score)
-        print(self.theta.shape)
-        # np.savetxt("parameter.txt",self.theta,delimiter=',',newline='\n')
+        print(np.show_config())
+        np.savetxt("parameter.txt",self.theta,delimiter=',',newline='\n')
 
     def hypothesis(self, theta):
         # print(self.temp1)
         return 1/(1+(np.exp(-np.dot(self.temp1, theta))))
 
-    def maxProbability(self):
-        max = 0.0;
-        index=1;
-        for i in range(1,11):
-            probability = self.hypothesis(self.theta[:,i])
-
-            if probability > max:
-                max = probability
-                index = i;
-        return index
-
-    def predict(self):
-        for i in range(2000,2110):
-            temp = self.X[i, :]
-            self.temp1 = np.ones((401, ))
-            self.temp1[1:,] = temp
-            num = self.maxProbability()
-            temp = temp.reshape((20, 20)).astype(np.float32)
-            cv2.imshow('image', temp)
-            if cv2.waitKey(0) == 27:
-                cv2.destroyAllWindows()
-            print(num, self.Y[i,], '\n')
-
 
 
 def call_digit_recognizer():
-    data_digit= DigitRecognizer("/home/amit/Downloads/train.csv")
+    data_digit= DigitRecognizer("train.csv")
     data_digit.find_parameter()
     # data_digit.predict()
 

@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b88d77ac-09c4-42e1-8205-0780e1920707" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logisticRegression/kaggleMNIST.py" afterPath="$PROJECT_DIR$/logisticRegression/kaggleMNIST.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kaggle/digitRecognizer/kaggleMNIST.py" afterPath="$PROJECT_DIR$/kaggle/digitRecognizer/kaggleMNIST.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kaggle/digitRecognizer/kaggleMNISTtest.py" afterPath="$PROJECT_DIR$/kaggle/digitRecognizer/kaggleMNISTtest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kaggle/digitRecognizer/parameter.txt" afterPath="$PROJECT_DIR$/kaggle/digitRecognizer/parameter.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kaggle/digitRecognizer/prediction.csv" afterPath="$PROJECT_DIR$/kaggle/digitRecognizer/prediction.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kaggle/digitRecognizer/prediction.txt" afterPath="$PROJECT_DIR$/kaggle/digitRecognizer/prediction.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,14 +24,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="logisticRegression.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="logisticRegression.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logisticRegression/logisticRegression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="217" column="8" lean-forward="false" selection-start-line="217" selection-start-column="8" selection-end-line="225" selection-end-column="25" />
+            <state relative-caret-position="180">
+              <caret line="229" column="48" lean-forward="true" selection-start-line="229" selection-start-column="22" selection-end-line="229" selection-end-column="48" />
               <folding>
                 <element signature="e#21#39#0" expanded="true" />
-                <element signature="e#304#2532#0" expanded="false" />
                 <element signature="e#784#1095#0" expanded="false" />
                 <element signature="e#4042#7031#0" expanded="false" />
               </folding>
@@ -38,29 +41,33 @@
       <file leaf-file-name="digitRecognizerAndrewng.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logisticRegression/digitRecognizerAndrewng.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
+            <state relative-caret-position="-612">
               <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kaggleMNIST.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/logisticRegression/kaggleMNIST.py">
+      <file leaf-file-name="kaggleMNISTtest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kaggle/digitRecognizer/kaggleMNISTtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="612">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kaggleMNISTtest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logisticRegression/kaggleMNISTtest.py">
+      <file leaf-file-name="kaggleMNIST.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kaggle/digitRecognizer/kaggleMNIST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="26" column="75" lean-forward="false" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
-              <folding />
+            <state relative-caret-position="432">
+              <caret line="39" column="33" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,6 +100,8 @@
         <option value="$PROJECT_DIR$/logisticRegression/digitRecognizerAndrewng.py" />
         <option value="$PROJECT_DIR$/logisticRegression/kaggleMNISTtest.py" />
         <option value="$PROJECT_DIR$/logisticRegression/kaggleMNIST.py" />
+        <option value="$PROJECT_DIR$/kaggle/digitRecognizer/kaggleMNISTtest.py" />
+        <option value="$PROJECT_DIR$/kaggle/digitRecognizer/kaggleMNIST.py" />
       </list>
     </option>
   </component>
@@ -128,6 +137,17 @@
             <path>
               <item name="algoCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="algoCode" type="462c0819:PsiDirectoryNode" />
+              <item name="kaggle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algoCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algoCode" type="462c0819:PsiDirectoryNode" />
+              <item name="kaggle" type="462c0819:PsiDirectoryNode" />
+              <item name="digitRecognizer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algoCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algoCode" type="462c0819:PsiDirectoryNode" />
               <item name="logisticRegression" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -153,24 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.kaggleMNIST">
-    <configuration name="del" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/logisticRegression" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="algoCode" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/logisticRegression/del.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.kaggleMNIST (1)">
     <configuration name="digitRecognizerAndrewng" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -184,6 +187,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="algoCode" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/logisticRegression/digitRecognizerAndrewng.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="kaggleMNIST (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kaggle/digitRecognizer" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="algoCode" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kaggle/digitRecognizer/kaggleMNIST.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,6 +225,23 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="kaggleMNISTtest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kaggle/digitRecognizer" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="algoCode" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kaggle/digitRecognizer/kaggleMNISTtest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="kaggleMNISTtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -222,37 +259,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="logisticRegression" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/logisticRegression" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="algoCode" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/logisticRegression/logisticRegression.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.logisticRegression" />
-      <item index="1" class="java.lang.String" itemvalue="Python.del" />
-      <item index="2" class="java.lang.String" itemvalue="Python.digitRecognizerAndrewng" />
-      <item index="3" class="java.lang.String" itemvalue="Python.kaggleMNIST" />
-      <item index="4" class="java.lang.String" itemvalue="Python.kaggleMNISTtest" />
+      <item index="0" class="java.lang.String" itemvalue="Python.digitRecognizerAndrewng" />
+      <item index="1" class="java.lang.String" itemvalue="Python.kaggleMNIST" />
+      <item index="2" class="java.lang.String" itemvalue="Python.kaggleMNISTtest" />
+      <item index="3" class="java.lang.String" itemvalue="Python.kaggleMNISTtest (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.kaggleMNIST (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.kaggleMNIST" />
-        <item index="1" class="java.lang.String" itemvalue="Python.kaggleMNISTtest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.digitRecognizerAndrewng" />
-        <item index="3" class="java.lang.String" itemvalue="Python.logisticRegression" />
-        <item index="4" class="java.lang.String" itemvalue="Python.del" />
+        <item index="0" class="java.lang.String" itemvalue="Python.kaggleMNIST (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.kaggleMNISTtest (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.kaggleMNISTtest" />
+        <item index="3" class="java.lang.String" itemvalue="Python.kaggleMNIST" />
+        <item index="4" class="java.lang.String" itemvalue="Python.digitRecognizerAndrewng" />
       </list>
     </recent_temporary>
   </component>
@@ -282,38 +302,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="278" width="1368" height="780" extended-state="6" />
+    <frame x="63" y="278" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2439394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43365696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40938511" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26136363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39805827" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.263745" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40938511" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43365696" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2439394" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3867314" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39805827" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -322,18 +331,18 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40614888" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40938511" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43365696" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24924242" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.263745" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39805827" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39805827" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -353,29 +362,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/polyLinearRegression/polyLinearRegression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="e#249#1897#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logisticRegression/logisticRegression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="208" column="0" lean-forward="true" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-          <folding>
-            <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#304#2532#0" expanded="false" />
-            <element signature="e#784#1095#0" expanded="false" />
-            <element signature="e#4042#7031#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/linearRegression/linearRegression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -387,9 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="e#249#1897#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -399,7 +382,6 @@
           <caret line="254" column="38" lean-forward="false" selection-start-line="254" selection-start-column="38" selection-end-line="254" selection-end-column="38" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#304#2532#0" expanded="false" />
             <element signature="e#784#1095#0" expanded="false" />
             <element signature="e#4042#7031#0" expanded="false" />
           </folding>
@@ -419,7 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
           <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -427,9 +408,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1062">
           <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="e#249#1897#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -446,7 +424,6 @@
           <caret line="139" column="25" lean-forward="false" selection-start-line="139" selection-start-column="25" selection-end-line="139" selection-end-column="25" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#304#2532#0" expanded="false" />
             <element signature="e#784#1095#0" expanded="false" />
             <element signature="e#4042#7031#0" expanded="false" />
           </folding>
@@ -466,7 +443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
           <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -481,9 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="e#249#1897#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -493,7 +466,6 @@
           <caret line="223" column="22" lean-forward="true" selection-start-line="223" selection-start-column="22" selection-end-line="223" selection-end-column="36" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#304#2532#0" expanded="false" />
             <element signature="e#784#1095#0" expanded="false" />
             <element signature="e#4042#7031#0" expanded="false" />
           </folding>
@@ -513,7 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
           <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -521,9 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1062">
           <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="e#249#1897#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -540,7 +508,6 @@
           <caret line="139" column="25" lean-forward="false" selection-start-line="139" selection-start-column="25" selection-end-line="139" selection-end-column="25" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#304#2532#0" expanded="false" />
             <element signature="e#784#1095#0" expanded="false" />
             <element signature="e#4042#7031#0" expanded="false" />
           </folding>
@@ -560,7 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
           <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -575,9 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="e#249#1897#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,7 +550,6 @@
           <caret line="254" column="41" lean-forward="false" selection-start-line="254" selection-start-column="41" selection-end-line="254" selection-end-column="41" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#304#2532#0" expanded="false" />
             <element signature="e#784#1095#0" expanded="false" />
             <element signature="e#4042#7031#0" expanded="false" />
           </folding>
@@ -607,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
           <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -615,9 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1062">
           <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="e#249#1897#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -634,7 +592,6 @@
           <caret line="139" column="25" lean-forward="false" selection-start-line="139" selection-start-column="25" selection-end-line="139" selection-end-column="25" />
           <folding>
             <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#304#2532#0" expanded="false" />
             <element signature="e#784#1095#0" expanded="false" />
             <element signature="e#4042#7031#0" expanded="false" />
           </folding>
@@ -654,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
           <caret line="189" column="0" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -669,47 +625,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="e#249#1897#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logisticRegression/del.py" />
-    <entry file="file://$PROJECT_DIR$/logisticRegression/logisticRegression.py">
+    <entry file="file://$PROJECT_DIR$/logisticRegression/kaggleMNISTtest.py" />
+    <entry file="file://$PROJECT_DIR$/logisticRegression/kaggleMNIST.py" />
+    <entry file="file://$PROJECT_DIR$/kaggle/digitRecognizer/kaggleMNIST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="217" column="8" lean-forward="false" selection-start-line="217" selection-start-column="8" selection-end-line="225" selection-end-column="25" />
+        <state relative-caret-position="432">
+          <caret line="39" column="33" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
           <folding>
-            <element signature="e#21#39#0" expanded="true" />
-            <element signature="e#304#2532#0" expanded="false" />
-            <element signature="e#784#1095#0" expanded="false" />
-            <element signature="e#4042#7031#0" expanded="false" />
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kaggle/digitRecognizer/kaggleMNISTtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logisticRegression/digitRecognizerAndrewng.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
+        <state relative-caret-position="-612">
           <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logisticRegression/kaggleMNISTtest.py">
+    <entry file="file://$PROJECT_DIR$/logisticRegression/logisticRegression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="26" column="75" lean-forward="false" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logisticRegression/kaggleMNIST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="229" column="48" lean-forward="true" selection-start-line="229" selection-start-column="22" selection-end-line="229" selection-end-column="48" />
+          <folding>
+            <element signature="e#21#39#0" expanded="true" />
+            <element signature="e#784#1095#0" expanded="false" />
+            <element signature="e#4042#7031#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

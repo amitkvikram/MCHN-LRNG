@@ -95,7 +95,7 @@ def skikit_nonLinearReg():
     data_uni1.regr= data_uni1.findFit();
     data_uni1.plotCurve();
 
-# skikit_nonLinearReg()
+skikit_nonLinearReg()
 # uni_grad();
 
 ##################################################################################################
